@@ -14,8 +14,7 @@ const nextConfig = {
           ]
         }
       ]
-    },
-    target: "server",
+    }
   }
   
 module.exports = nextConfig
