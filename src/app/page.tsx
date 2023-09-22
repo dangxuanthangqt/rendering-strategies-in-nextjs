@@ -9,16 +9,16 @@ export default function Home() {
       <p className="m-2">This is a preview of the article <q>Rendering Strategies in Next.js. </q> You can read the full article by clicking this <a className='text-cyan-300' href="">link.</a></p>
       <div style={{ maxWidth: "400px" }}>
       <div className="m-2">
-        <CSR />
+        <CSR/>
       </div>
       <div className="m-2">
-        <SSR timeStamp="Error occured while fetch the data" />
+        <SSR/>
       </div>
       <div className="m-2">
-        <SSG timeStamp="Error occured while fetch the data" />
+        <SSG/>
       </div>
       <div className="m-2">
-        <ISR timeStamp="Error occured while fetch the data" />
+        <ISR/>
       </div>
       </div>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 interface TimeCardProps {
-    title: string,
-    timestamp: string,
+    title?: string,
+    timestamp?: string,
     description?: string
 }
 

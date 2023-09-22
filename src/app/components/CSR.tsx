@@ -3,7 +3,7 @@ import React from 'react'
 import TimeCard from './TimeCard'
 import axios from 'axios';
 import { useState, useEffect } from 'react'
-function CSR() {
+export default function CSR() {
     const [dateTime, setDateTime] = useState('');
     useEffect(() => {
         axios
@@ -21,4 +21,4 @@ function CSR() {
     )
 }
 
-export default CSR
+
