@@ -16,7 +16,7 @@ export default function CSR() {
 
     return (
         <div>
-            <TimeCard title="Client Side Rendering" timestamp={dateTime} description="This time generates inside the client." />
+            <TimeCard title="Client Side Rendering" timestamp={dateTime} description="This timestamp is generating inside the client." />
         </div>
     )
 }

@@ -10,7 +10,7 @@ export default async function SSG() {
   const dateTime = result.datetime
   return (
     <div>
-      <TimeCard title="Static Site Generation" timestamp={dateTime} description="This time generates inside the build."/>
+      <TimeCard title="Static Site Generation" timestamp={dateTime} description="This timestamp generated in the build time."/>
     </div>
   )
 }

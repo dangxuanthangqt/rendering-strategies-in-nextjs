@@ -11,7 +11,7 @@ export default async function ISR() {
   const dateTime = result.datetime
   return (
     <div>
-      <TimeCard title="Incremenral Static Regeneration" timestamp={dateTime} description="This time generates inside the server and it regenerates this component in each 20 seconds. Refresh the page in each 20 seconds for see the change"/>
+      <TimeCard title="Incremenral Static Regeneration" timestamp={dateTime} description="This timestamp generated inside the server and it regenerating this component in each 20 seconds. Refresh the page in each 20 seconds for see the change"/>
     </div>
   )
 }

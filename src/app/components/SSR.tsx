@@ -11,7 +11,7 @@ export default async function SSR() {
   const dateTime = result.datetime
   return (
     <div>
-      <TimeCard title="Server Side Rendering" timestamp={dateTime} description="This time generates inside the server."/>
+      <TimeCard title="Server Side Rendering" timestamp={dateTime} description="This timestamp generated inside the server."/>
     </div>
   )
 }
