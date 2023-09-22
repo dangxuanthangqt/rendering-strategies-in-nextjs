@@ -1,13 +1,17 @@
 import React from 'react'
 import TimeCard from './TimeCard'
-import axios from 'axios';
 
+async function getDateTime() {
+  const res = await fetch(`https://worldtimeapi.org/api/ip`, { next: { revalidate: 20 } })
+  return res.json()
+}
 
-function ISR() {
+export default async function ISR() {
+  const result = await getDateTime()
+  const dateTime = result.datetime
   return (
     <div>
-        {/* <TimeCard title="Incremental Static Regeneration" timestamp={timeStamp} description="This time generates inside the server and it regenerates this component in each 10 seconds. Refresh the page in each 10 seconds for see the change"/> */}
+      <TimeCard title="Incremenral Static Regeneration" timestamp={dateTime} description="This time generates inside the server and it regenerates this component in each 10 seconds. Refresh the page in each 10 seconds for see the change"/>
     </div>
   )
 }
-export default ISR

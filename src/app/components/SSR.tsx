@@ -9,7 +9,6 @@ async function getDateTime() {
 export default async function SSR() {
   const result = await getDateTime()
   const dateTime = result.datetime
-  console.log(typeof dateTime)
   return (
     <div>
       <TimeCard title="Server Side Rendering" timestamp={dateTime} description="This time generates inside the server."/>

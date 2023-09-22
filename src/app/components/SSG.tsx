@@ -1,23 +1,16 @@
 import React from 'react'
 import TimeCard from './TimeCard'
-import axios from 'axios';
-
-
-function SSG() {
+async function getDateTime() {
+  const res = await fetch(`https://worldtimeapi.org/api/ip`)
+  return res.json()
+}
+ 
+export default async function SSG() {
+  const result = await getDateTime()
+  const dateTime = result.datetime
   return (
     <div>
-      {/* <TimeCard title="Static Site Generation" timestamp={timeStamp} description="This time generates inside the server in build time."/> */}
+      <TimeCard title="Static Site Generation" timestamp={dateTime} description="This time generates inside the build."/>
     </div>
   )
 }
-export default SSG
-
-// export async function generateStaticParams(){
-//   const res = await axios.get('https://worldtimeapi.org/api/ip');
-
-//   return {
-//     props: { 
-//       timeStamp: res.data.datetime 
-//     },
-//   };
-// };
