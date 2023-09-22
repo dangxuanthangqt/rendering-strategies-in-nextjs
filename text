@@ -1,0 +1,2 @@
+Data fetching functions like getServerSideProps and getStaticProps have been 
+replaced with a new API inside app. getStaticPaths has been replaced with generateStaticParams.

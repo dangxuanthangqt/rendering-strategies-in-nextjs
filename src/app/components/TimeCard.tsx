@@ -6,6 +6,7 @@ interface TimeCardProps {
 }
 
 function TimeCard({ title, timestamp,description }: TimeCardProps) {
+    console.log(title, timestamp, description)
     return (
         <div className="bg-gray-50 flex flex-col justify-center relative overflow-hidden sm:py-1 sm:px-1 ">
             <div className="max-w-7xl mx-auto">

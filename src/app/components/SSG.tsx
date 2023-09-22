@@ -14,7 +14,7 @@ function SSG({timeStamp}:SSGProps) {
 }
 export default SSG
 
-export async function getStaticProps(){
+export async function generateStaticParams(){
   const res = await axios.get('https://worldtimeapi.org/api/ip');
 
   return {
