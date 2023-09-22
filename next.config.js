@@ -2,9 +2,6 @@
 const nextConfig = {
     reactStrictMode: true,
     target: 'server',
-    cache: {
-      revalidate: true,
-    },
     async headers() {
       return [
         {
