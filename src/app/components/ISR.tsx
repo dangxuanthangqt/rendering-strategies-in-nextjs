@@ -2,7 +2,7 @@ import React from 'react'
 import TimeCard from './TimeCard'
 
 async function getDateTime() {
-  const res = await fetch(`https://worldtimeapi.org/api/timezone/Europe`, { next: { revalidate: 20 } })
+  const res = await fetch(`https://worldtimeapi.org/api/ip`, { next: { revalidate: 20 } })
   return res.json()
 }
 

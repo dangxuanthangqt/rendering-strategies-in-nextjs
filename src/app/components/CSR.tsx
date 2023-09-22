@@ -7,7 +7,7 @@ export default function CSR() {
     const [dateTime, setDateTime] = useState('');
     useEffect(() => {
         axios
-            .get('https://worldtimeapi.org/api/timezone/Europe') // Make a request for take the date and time from the API
+            .get('https://worldtimeapi.org/api/ip') // Make a request for take the date and time from the API
             .then((res) => {
                 setDateTime(res.data.datetime); // Set the date and time
             })
