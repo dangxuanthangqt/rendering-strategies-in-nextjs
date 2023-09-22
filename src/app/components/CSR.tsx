@@ -7,7 +7,12 @@ function CSR() {
     const [dateTime, setDateTime] = useState('');
     useEffect(() => {
         axios
-            .get('https://worldtimeapi.org/api/ip') // Make a request for take the date and time from the API
+            .get('https://worldtimeapi.org/api/ip',{
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Content-Type': 'application/json',
+                },
+            }) // Make a request for take the date and time from the API
             .then((res) => {
                 setDateTime(res.data.datetime); // Set the date and time
             })
